@@ -1,0 +1,133 @@
+html_code = '''<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin Top BBQ — Real Pit Barbecue | Calera, AL</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', system-ui, sans-serif; background: #1a1209; color: #f5e6d3; }
+        header { background: linear-gradient(180deg, #2d1f0f 0%, #1a1209 100%); padding: 56px 32px; text-align: center; border-bottom: 4px solid #c75b2a; }
+        h1 { font-size: 3.2rem; font-weight: 900; color: #f5e6d3; letter-spacing: 2px; text-transform: uppercase; }
+        .tagline { font-size: 1.3rem; color: #c75b2a; margin-top: 10px; font-weight: 600; }
+        .subtag { font-size: 1rem; color: #a89080; margin-top: 8px; }
+        .btn-group { margin-top: 28px; }
+        .btn-primary { display: inline-block; background: #c75b2a; color: #fff; padding: 16px 36px; border-radius: 8px; font-weight: 700; font-size: 1.1rem; text-decoration: none; margin-right: 12px; }
+        .btn-secondary { display: inline-block; background: #2d1f0f; color: #f5e6d3; padding: 16px 36px; border-radius: 8px; font-weight: 600; font-size: 1.1rem; border: 2px solid #c75b2a; }
+        section { padding: 56px 32px; text-align: center; }
+        .hero h2 { font-size: 2.4rem; color: #f5e6d3; margin-bottom: 16px; }
+        .hero p { font-size: 1.1rem; color: #a89080; max-width: 650px; margin: 0 auto 36px auto; line-height: 1.7; }
+        .stats { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; }
+        .stat-box { background: #2d1f0f; padding: 28px 36px; border-radius: 12px; min-width: 180px; border: 1px solid #3d2d1a; }
+        .stat-box .num { font-size: 2.2rem; font-weight: 800; color: #c75b2a; }
+        .stat-box .label { color: #a89080; font-size: 0.95rem; margin-top: 4px; }
+        .menu { background: #2d1f0f; }
+        .menu h2 { font-size: 1.9rem; color: #f5e6d3; margin-bottom: 36px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; max-width: 900px; margin: 0 auto; }
+        .card { background: #1a1209; padding: 32px; border-radius: 12px; border-left: 4px solid #c75b2a; text-align: left; }
+        .card h3 { color: #c75b2a; margin-bottom: 10px; font-size: 1.2rem; }
+        .card p { color: #a89080; font-size: 0.95rem; line-height: 1.6; }
+        .popular { background: #1a1209; }
+        .popular-box { background: #2d1f0f; padding: 40px; border-radius: 12px; max-width: 750px; margin: 0 auto; border: 2px solid #c75b2a; }
+        .popular-box h3 { color: #c75b2a; margin-bottom: 14px; font-size: 1.4rem; }
+        .popular-box p { color: #f5e6d3; font-size: 1.05rem; line-height: 1.7; }
+        .info { background: #2d1f0f; }
+        .info-grid { max-width: 750px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; text-align: left; }
+        .info h3 { color: #c75b2a; margin-bottom: 18px; font-size: 1.2rem; }
+        .info p, .info div { color: #f5e6d3; line-height: 2; }
+        .info span { color: #a89080; }
+        .reviews { background: #1a1209; padding: 40px 32px; text-align: center; }
+        .reviews h3 { color: #a89080; margin-bottom: 20px; font-size: 1rem; text-transform: uppercase; letter-spacing: 2px; }
+        .review-text { color: #c75b2a; font-size: 1.1rem; font-style: italic; max-width: 600px; margin: 0 auto; }
+        .reviewer { color: #a89080; font-size: 0.9rem; margin-top: 12px; }
+        footer { background: #1a1209; padding: 28px 32px; text-align: center; border-top: 1px solid #2d1f0f; }
+        footer p { color: #5a4a3a; font-size: 0.9rem; }
+        a { color: #c75b2a; text-decoration: none; font-weight: 600; }
+        @media (max-width: 600px) {
+            h1 { font-size: 2.2rem; }
+            .info-grid { grid-template-columns: 1fr; }
+            .btn-group a { display: block; margin: 8px auto; max-width: 280px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tin Top BBQ</h1>
+        <p class="tagline">Real Pit Barbecue</p>
+        <p class="subtag">3477 Co Rd 33, Calera, AL — (205) 668-1409</p>
+        <div class="btn-group">
+            <a href="tel:2056681409" class="btn-primary">📞 Call to Order</a>
+            <span class="btn-secondary">📍 Get Directions</span>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h2>Slow-Smoked. Made Fresh. Worth the Drive.</h2>
+        <p>Calera's go-to spot for real pit barbecue. Fall-off-the-bone ribs, hand-pulled pork, and banana pudding that people drive an hour for. Dine in or take out — either way, come hungry.</p>
+        <div class="stats">
+            <div class="stat-box"><div class="num">4.6★</div><div class="label">460 Reviews</div></div>
+            <div class="stat-box"><div class="num">$10–20</div><div class="label">Per Person</div></div>
+            <div class="stat-box"><div class="num">11AM–7PM</div><div class="label">Tue–Sun</div></div>
+        </div>
+    </section>
+
+    <section class="menu">
+        <h2>What to Order</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>🔥 Ribs</h3>
+                <p>Slow-smoked for hours until the meat falls off the bone. Our #1 seller and the reason people drive from counties away.</p>
+            </div>
+            <div class="card">
+                <h3>🐷 Pulled Pork</h3>
+                <p>Hand-pulled, sauced your way. Piled high on a bun or by the pound. Comes with your choice of sides.</p>
+            </div>
+            <div class="card">
+                <h3>🍗 Pig Wings</h3>
+                <p>A Tin Top original. Smoky, crispy, and unlike anything else on the menu. Regulars swear by them.</p>
+            </div>
+            <div class="card">
+                <h3>🍌 Banana Pudding</h3>
+                <p>House-made, creamy, and the perfect finish to a heavy plate. Don't skip it — you'll regret it.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="popular">
+        <div class="popular-box">
+            <h3>⭐ Dine-In or Takeout</h3>
+            <p>Walk in and grab a seat, or call ahead and we'll have it ready. Open kitchen so you can watch the smoke roll. Family-friendly, fast service, and portions big enough to take home.</p>
+        </div>
+    </section>
+
+    <section class="info">
+        <div class="info-grid">
+            <div>
+                <h3>🕐 Hours</h3>
+                <div>Tue – Sun: <span>11:00 AM – 7:00 PM</span></div>
+                <div>Mon: <span>Closed</span></div>
+            </div>
+            <div>
+                <h3>📍 Location</h3>
+                <p>3477 Co Rd 33<br>Calera, AL 35040<br><br>
+                <a href="tel:2056681409">(205) 668-1409</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews">
+        <h3>What People Are Saying</h3>
+        <p class="review-text">"I was told by a local about an hour south that the best place for BBQ was here so I took the hour drive and well worth it! I had the ribs and they were the best."</p>
+        <p class="reviewer">— Sharon Kopina, Google Review</p>
+    </section>
+
+    <footer>
+        <p>© Tin Top BBQ — Real Pit Barbecue — Calera, Alabama</p>
+    </footer>
+</body>
+</html>'''
+
+with open('/mnt/agents/output/tintop-demo.html', 'w') as f:
+    f.write(html_code)
+
+print("Saved to /mnt/agents/output/tintop-demo.html")
